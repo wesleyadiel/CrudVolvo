@@ -1,0 +1,14 @@
+G:\Meu Drive\Desenvolvimento\Volvo\Volvo.Data\bin\Debug\net6.0\Volvo.Data.deps.json
+G:\Meu Drive\Desenvolvimento\Volvo\Volvo.Data\bin\Debug\net6.0\Volvo.Data.runtimeconfig.json
+G:\Meu Drive\Desenvolvimento\Volvo\Volvo.Data\bin\Debug\net6.0\Volvo.Data.dll
+G:\Meu Drive\Desenvolvimento\Volvo\Volvo.Data\bin\Debug\net6.0\Volvo.Data.pdb
+G:\Meu Drive\Desenvolvimento\Volvo\Volvo.Data\obj\Debug\net6.0\Volvo.Data.csproj.AssemblyReference.cache
+G:\Meu Drive\Desenvolvimento\Volvo\Volvo.Data\obj\Debug\net6.0\Volvo.Data.GeneratedMSBuildEditorConfig.editorconfig
+G:\Meu Drive\Desenvolvimento\Volvo\Volvo.Data\obj\Debug\net6.0\Volvo.Data.AssemblyInfoInputs.cache
+G:\Meu Drive\Desenvolvimento\Volvo\Volvo.Data\obj\Debug\net6.0\Volvo.Data.AssemblyInfo.cs
+G:\Meu Drive\Desenvolvimento\Volvo\Volvo.Data\obj\Debug\net6.0\Volvo.Data.csproj.CoreCompileInputs.cache
+G:\Meu Drive\Desenvolvimento\Volvo\Volvo.Data\obj\Debug\net6.0\Volvo.Data.dll
+G:\Meu Drive\Desenvolvimento\Volvo\Volvo.Data\obj\Debug\net6.0\refint\Volvo.Data.dll
+G:\Meu Drive\Desenvolvimento\Volvo\Volvo.Data\obj\Debug\net6.0\Volvo.Data.pdb
+G:\Meu Drive\Desenvolvimento\Volvo\Volvo.Data\obj\Debug\net6.0\Volvo.Data.genruntimeconfig.cache
+G:\Meu Drive\Desenvolvimento\Volvo\Volvo.Data\obj\Debug\net6.0\ref\Volvo.Data.dll

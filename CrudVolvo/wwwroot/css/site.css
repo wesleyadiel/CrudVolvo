@@ -1,0 +1,40 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+.titulo-pagina {
+    justify-content:left;
+}
+.icone-acao:hover {
+    cursor:pointer
+}
+
+.opcoes-pagina {
+    position:absolute;
+    bottom:15vh;
+    right:20vh;
+}
+
+.conteudo-pagina {
+    height:70vh;
+    border:1px;
+    border-color: black;
+    border-style:solid;
+    border-radius: 10px;
+    box-shadow: 0px 0px 1px 1px black;
+}

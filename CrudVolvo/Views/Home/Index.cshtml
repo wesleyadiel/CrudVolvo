@@ -1,0 +1,51 @@
+﻿@using CrudVolvo.ViewModels
+@model IEnumerable<CrudVolvo.ViewModels.CaminhaoViewModel>
+@{
+    ViewData["Title"] = "Caminhões";
+}
+
+<div class="text-center">
+    <div class="titulo-pagina">
+        <h3 class="align-content-start">Caminhões</h3>
+    </div>
+    <div class="container conteudo-pagina">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Placa</th>
+                    <th scope="col">Modelo</th>
+                    <th scope="col">Ano do modelo</th>
+                    <th scope="col">Ano de fabricação</th>
+                    <th scope="col">Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var caminhao in Model)
+                {
+                    <tr>
+                        <td>@caminhao.Id</td>
+                        <td>@caminhao.Placa</td>
+                        <td>@caminhao.Modelo</td>
+                        <td>@caminhao.AnoModelo</td>
+                        <td>@caminhao.AnoFabricacao</td>
+                        <td>
+                            <a class="bi bi-pencil-square icone-acao" asp-area="" asp-controller="Home" asp-action="EditarCaminhao" asp-route-idCaminhao="@caminhao.Id"></a>
+                            &nbsp;&nbsp;
+                            <a class="bi bi-trash icone-acao"  asp-area="" asp-controller="Home" asp-action="RemoverCaminhao" asp-route-idCaminhao="@caminhao.Id"></a>
+                        </td>
+
+                    </tr>
+                }
+            </tbody>
+        </table>
+        <div class=opcoes-pagina>
+            <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="CadastroCaminhao">
+                <button type="submit" class="btn btn-primary">
+                    Novo Caminhão
+                </button>
+            </a>
+
+        </div>
+    </div>
+</div>

@@ -1,0 +1,75 @@
+﻿@{
+    ViewData["Title"] = "Caminhões";
+}
+@model Volvo.Data.Caminhao;
+
+<script>
+    $(document).ready(function () {
+        var checkAllBox = $("#_cbxModeloFixo");
+
+        checkAllBox.prop('checked', false);
+
+        checkAllBox.click(function () {  
+            var status = checkAllBox.prop('checked');
+            console.log(status);
+            if(status)
+            {
+                console.log("entrou if");
+                $("#_inputModeloFlexivel").hide();
+                $("#_inputModeloFixo").show;
+            }
+            else
+            {
+                console.log("entrou else");
+                $("#_inputModeloFlexivel").show();
+                $("#_inputModeloFixo").hide();
+            }
+        });
+    });
+</script>
+
+<div class="text-center">
+    <div class="titulo-pagina">
+        <h3 class="align-content-start">Caminhões</h3>
+    </div>
+    <div class="container conteudo-pagina">
+        <form asp-area="" asp-controller="Home" asp-action="SalvarCaminhao">
+            </br>
+            @Html.HiddenFor(m => m.Id)
+            <div class="row">
+                <div class="col-3">
+                    <label asp-for="Placa" class="form-label"></label>
+                    <input asp-for="Placa" type="text" class="form-control">
+                    <span asp-validation-for="Placa" class="text-danger"></span>
+                </div>
+                <div class="col-5">
+                    <label asp-for="Modelo" class="form-label"></label>
+                    <select class="form-select" asp-for="Modelo">
+                        <option selected>Selecione um modelo</option>
+                        <option value="FH">FH</option>
+                        <option value="FM">FM</option>
+                    </select>
+                    <span asp-validation-for="Modelo" class="text-danger"></span>
+                </div>
+                <div class="col-2">
+                    <label asp-for="AnoModelo" class="form-label"></label>
+                    <input asp-for="AnoModelo" type="number" class="form-control">
+                    <span asp-validation-for="AnoModelo" class="text-danger"></span>
+                </div>
+                <div class="col-2">
+                    <label asp-for="AnoFabricacao" class="form-label"></label>
+                    <input asp-for="AnoFabricacao" type="number" class="form-control">
+                    <span asp-validation-for="AnoFabricacao" class="text-danger"></span>
+                </div>
+            </div>
+            <div class=opcoes-pagina>
+                <a asp-area="" asp-controller="Home" asp-action="Index">
+                    <button type="button" class="btn btn-danger">
+                        Voltar
+                    </button>
+                </a>
+                <button type="submit" class="btn btn-success">Salvar</button>
+            </div>
+        </form>
+    </div>
+</div>
